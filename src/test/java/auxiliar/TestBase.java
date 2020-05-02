@@ -8,7 +8,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.ITestContext;
 
 public class TestBase extends MetodosGenerales {
-    private AppiumDriver driver;
+    public AppiumDriver driver;
     private AppiumDriverLocalService server;
     private String remoteDevice;
     private String platformName;
@@ -82,7 +82,5 @@ public class TestBase extends MetodosGenerales {
         }
         return deviceInfo;
     }
-
-
 
 }

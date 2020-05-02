@@ -1,6 +1,7 @@
 package auxiliar;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -33,9 +34,7 @@ public class Driver {
             capabilities.setCapability("appActivity", appActivity);
             capabilities.setCapability("autoGrantPermissions", true);
             capabilities.setCapability("noReset",true);
-            capabilities.setCapability("automationName","uiautomator2");
-          //  capabilities.setCapability("–session-override",true);
-        driver = new AndroidDriver(server.getUrl(),capabilities);
+        driver = new AndroidDriver<MobileElement>(server.getUrl(),capabilities);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         return driver;
     }

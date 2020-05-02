@@ -4,8 +4,8 @@
     <test name = "Testing Environment">
         <parameter name = "Platform" value = "Android"/>
         <parameter name = "Device" value = "angel" />
-        <packages>
-            <package name = "pruebas"/>
-        </packages>
+        <classes>
+            <class name = "pruebas.verificarBusquedaGoogle"/>
+        </classes>
     </test>
 </suite>

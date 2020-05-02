@@ -12,6 +12,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class MetodosGenerales {
     private WebDriverWait wait;
@@ -117,6 +118,19 @@ public class MetodosGenerales {
             wait.until(ExpectedConditions.visibilityOf(element));
             element.clear();
             element.sendKeys(texto);
+            return true;
+        }catch(Exception Error){
+            return false;
+        }
+    }
+
+    protected Boolean enter(AppiumDriver driver, MobileElement element, int timeOut){
+        try{
+            if (!isDisplayed(driver,element,timeOut)){ return false; }
+            wait = waiter(driver, timeOut);
+            wait.until(ExpectedConditions.elementToBeClickable(element));
+            wait.until(ExpectedConditions.visibilityOf(element));
+            element.sendKeys(Keys.ENTER);
             return true;
         }catch(Exception Error){
             return false;
