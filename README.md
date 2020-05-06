@@ -161,7 +161,7 @@ Seguid los siguientes pasos para registrar un dispositivo real o emulador.
        ```` bash
        echo $PATH
        ```` 
-1. En iOS se necesita que tenga una cuenta de **apple developer susbscrita al programa de desarrolladores de apple**, si no solo pueden ejecutar pruebas en simuladores.
+1. En iOS se necesita que tenga una cuenta de **apple developer susbscrita al programa de desarrolladores de apple**, si no solo pueden ejecutar test en simuladores.
     1. Si tienen una cuenta de apple developer agregarla auxiliar xcode
     1. Conocer el `xcodeOrgId`y `xcodeSigningId` 
     1. Para obtener una cuenta consultar auxiliar **hfigueroa@cognits.co** o **lsanchez@cognits.co** ellos son los encargados de cuentas y les pueden aclarar sus dudas.

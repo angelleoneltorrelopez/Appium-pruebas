@@ -1,4 +1,4 @@
-package pruebas.calculator;
+package test.calculator;
 
 import auxiliar.TestBase;
 import io.appium.java_client.AppiumDriver;
