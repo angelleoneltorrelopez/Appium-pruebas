@@ -137,4 +137,16 @@ public class MetodosGenerales {
         }
     }
 
+    protected String getText(AppiumDriver driver, MobileElement element, int timeOut){
+        try{
+            if (!isDisplayed(driver,element,timeOut)){ return "false"; }
+            wait = waiter(driver, timeOut);
+            wait.until(ExpectedConditions.elementToBeClickable(element));
+            wait.until(ExpectedConditions.visibilityOf(element));
+            return element.getText();
+        }catch(Exception Error){
+            return "false";
+        }
+    }
+
 }

@@ -74,6 +74,9 @@ public class TestBase extends MetodosGenerales {
                     case "angel":
                         deviceInfo = new Object[][]{{"angel","RF8MC22QGXB","com.android.chrome","com.google.android.apps.chrome.Main"}};
                     break;
+                    case "angelCalculator":
+                        deviceInfo = new Object[][]{{"angel","RF8MC22QGXB","com.sec.android.app.popupcalculator","com.sec.android.app.popupcalculator.Calculator"}};
+                        break;
                     default:
                         deviceInfo = new Object[][]{{"Pixel Simulator","xxxx","xxxx","xxxx"}};
                     break;
