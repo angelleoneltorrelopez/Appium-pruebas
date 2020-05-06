@@ -4,26 +4,30 @@ import auxiliar.MetodosGenerales;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.support.PageFactory;
 
 public class Chrome extends MetodosGenerales {
 
-    private  AppiumDriver<MobileElement> driver;
-    private  Boolean isAndroid;
+    AppiumDriver<MobileElement> driver;
+    Boolean isAndroid;
 
     @AndroidFindBy(id = "com.android.chrome:id/terms_accept")
-    private AndroidElement botonAceptarYContinuar;
+    AndroidElement botonAceptarYContinuar;
 
     @AndroidFindBy(id = "com.android.chrome:id/next_button")
-    private AndroidElement botonSiguiente;
+    AndroidElement botonSiguiente;
 
     @AndroidFindBy(id = "com.android.chrome:id/positive_button")
-    private AndroidElement botonSiAcepto;
+    AndroidElement botonSiAcepto;
 
     @AndroidFindBy(id = "com.android.chrome:id/search_box_text")
-    private MobileElement inputSearchGoogle;
+    MobileElement inputSearchGoogle;
+
+    @AndroidFindBy(id = "com.android.chrome:id/url_bar")
+    MobileElement inputBarSearchGoogle;
 
     public Chrome(AppiumDriver driver) {
         isAndroid = isAndroid(driver);
@@ -32,8 +36,11 @@ public class Chrome extends MetodosGenerales {
     }
 
     public void clickBotonAceptarYContinuar(){
-        boolean click=click(driver, botonAceptarYContinuar,4);
-        System.out.println(click);
+        if (isAndroid) {
+            boolean click = click(driver, botonAceptarYContinuar, 4);
+            System.out.println(click);
+        }
+
     }
 
     public void clickBotonSiguiente(){
@@ -47,7 +54,10 @@ public class Chrome extends MetodosGenerales {
     }
 
     public void ingresarTextoInputSearchGoogle(String texto){
+        if (isAndroid) {
         boolean sendText=sendText(driver, inputSearchGoogle, texto,4);
         System.out.println(sendText);
+        }
     }
+
 }

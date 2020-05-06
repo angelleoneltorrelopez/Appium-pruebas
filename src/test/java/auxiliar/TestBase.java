@@ -8,7 +8,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.ITestContext;
 
 public class TestBase extends MetodosGenerales {
-    private AppiumDriver driver;
+    public AppiumDriver driver;
     private AppiumDriverLocalService server;
     private String remoteDevice;
     private String platformName;
@@ -74,6 +74,9 @@ public class TestBase extends MetodosGenerales {
                     case "angel":
                         deviceInfo = new Object[][]{{"angel","RF8MC22QGXB","com.android.chrome","com.google.android.apps.chrome.Main"}};
                     break;
+                    case "angelCalculator":
+                        deviceInfo = new Object[][]{{"angel","RF8MC22QGXB","com.sec.android.app.popupcalculator","com.sec.android.app.popupcalculator.Calculator"}};
+                        break;
                     default:
                         deviceInfo = new Object[][]{{"Pixel Simulator","xxxx","xxxx","xxxx"}};
                     break;
@@ -82,7 +85,5 @@ public class TestBase extends MetodosGenerales {
         }
         return deviceInfo;
     }
-
-
 
 }

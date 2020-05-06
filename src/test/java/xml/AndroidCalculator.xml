@@ -3,9 +3,9 @@
 <suite name = "Dummy pruebas" verbose = "1">
     <test name = "Testing Environment">
         <parameter name = "Platform" value = "Android"/>
-        <parameter name = "Device" value = "angel" />
+        <parameter name = "Device" value = "angelCalculator" />
         <classes>
-            <class name = "pruebas.verificarBusquedaGoogle"/>
+            <class name = "pruebas.calculator.sumar"/>
         </classes>
     </test>
 </suite>
