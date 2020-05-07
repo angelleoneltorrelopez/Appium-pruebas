@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name = "Dummy pruebas" verbose = "1">
+<suite name = "Dummy test" verbose = "1">
     <test name = "Testing Environment">
         <parameter name = "Platform" value = "Android"/>
         <parameter name = "Device" value = "angelCalculator" />
         <classes>
-            <class name = "pruebas.calculator.sumar"/>
+            <class name = "test.calculator.operacionesBasicas"/>
         </classes>
     </test>
 </suite>

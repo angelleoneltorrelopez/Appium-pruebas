@@ -14,6 +14,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.util.Date;
+import java.util.concurrent.ThreadLocalRandom;
+
 public class MetodosGenerales {
     private WebDriverWait wait;
     private TouchAction action;
@@ -147,6 +150,37 @@ public class MetodosGenerales {
         }catch(Exception Error){
             return "false";
         }
+    }
+
+    public void notificarRegresion(String clase, String metodo, String mensajeRegresion) {
+        String asuntoCorreo = "REGRESIÓN: [" + clase + "] --" + (new Date());
+        String cuerpoCorreo = "<strong> Clase: </strong>[" + clase + "]" + "<br />" +
+                "<strong>Método:</strong>. [" + metodo + "]" + "<br />" +
+                "<strong>Motivo de fallo:</strong> " + mensajeRegresion;
+        Assert.fail(mensajeRegresion);
+    }
+
+    public String obtenerClase() {
+        return getClass().getSimpleName();
+    }
+
+    public String obtenerMetodo() {
+        if (Thread.currentThread().getStackTrace().length > 2) {
+            return Thread.currentThread().getStackTrace()[2].getMethodName();
+        } else {
+            return "undefined";
+        }
+    }
+
+    public int obtenerEnteroAleatorio(int rango) {
+        return ThreadLocalRandom.current().nextInt(rango);
+    }
+
+    public float getRandomFloat(int rango, int posicionesDecimales) {
+        int potenciaDe10 = (int) Math.pow(10, posicionesDecimales);
+        int numero = rango * potenciaDe10;
+        numero = ThreadLocalRandom.current().nextInt(numero);
+        return ((float) numero) / ((float) potenciaDe10);
     }
 
 }

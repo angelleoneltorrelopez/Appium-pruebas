@@ -81,7 +81,7 @@
                 <version>3.0.0-M3</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/pruebas/java/xml/AndroidDummyTest.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/java/xml/AndroidDummyTest.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <properties>
                         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
