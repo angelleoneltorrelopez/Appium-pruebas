@@ -81,134 +81,115 @@ public class Principal extends MetodosGenerales {
 
     public void clickBotonCero(){
         if (isAndroid) {
-            boolean click  = click(driver, botonCero, 10);
-            System.out.println(click);
+            click(driver, botonCero, 10);
         }
     }
 
     public void clickBotonUno(){
         if (isAndroid) {
-            boolean click  = click(driver, botonUno, 10);
-            System.out.println(click);
+            click(driver, botonUno, 10);
         }
     }
 
     public void clickBotonDos(){
         if (isAndroid) {
-            boolean click  = click(driver, botonDos, 10);
-            System.out.println(click);
+            click(driver, botonDos, 10);
         }
     }
 
     public void clickBotonTres(){
         if (isAndroid) {
-            boolean click  = click(driver, botonTres, 10);
-            System.out.println(click);
+            click(driver, botonTres, 10);
         }
     }
 
     public void clickBotonCuatro(){
         if (isAndroid) {
-            boolean click  = click(driver, botonCuatro, 10);
-            System.out.println(click);
+            click(driver, botonCuatro, 10);
         }
     }
 
     public void clickBotonCinco(){
         if (isAndroid) {
-            boolean click  = click(driver, botonCinco, 10);
-            System.out.println(click);
+            click(driver, botonCinco, 10);
         }
     }
 
     public void clickBotonSeis(){
         if (isAndroid) {
-            boolean click  = click(driver, botonSeis, 10);
-            System.out.println(click);
+            click(driver, botonSeis, 10);
         }
     }
 
     public void clickBotonSiete(){
         if (isAndroid) {
-            boolean click  = click(driver, botonSiete, 10);
-            System.out.println(click);
+            click(driver, botonSiete, 10);
         }
     }
 
     public void clickBotonOcho(){
         if (isAndroid) {
-            boolean click  = click(driver, botonOcho, 10);
-            System.out.println(click);
+            click(driver, botonOcho, 10);
         }
     }
 
     public void clickBotonNueve(){
         if (isAndroid) {
-            boolean click  = click(driver, botonNueve, 10);
-            System.out.println(click);
+            click(driver, botonNueve, 10);
         }
     }
 
     public void clickBotonPunto(){
         if (isAndroid) {
-            boolean click  = click(driver, botonPunto, 10);
-            System.out.println(click);
+            click(driver, botonPunto, 10);
         }
     }
 
     public void clickBotonIgual(){
         if (isAndroid) {
-            boolean click  = click(driver, botonIgual, 10);
-            System.out.println(click);
+            click(driver, botonIgual, 10);
         }
     }
 
     public void clickBotonMas(){
         if (isAndroid) {
-            boolean click  = click(driver, botonMas, 10);
-            System.out.println(click);
+            click(driver, botonMas, 10);
         }
     }
 
     public void clickBotonMenos(){
         if (isAndroid) {
-            boolean click  = click(driver, botonMenos, 10);
-            System.out.println(click);
+            click(driver, botonMenos, 10);
         }
     }
 
     public void clickBotonMultiplicacion(){
         if (isAndroid) {
-            boolean click  = click(driver, botonMultiplicacion, 10);
-            System.out.println(click);
+            click(driver, botonMultiplicacion, 10);
         }
     }
 
     public void clickBotonDivision(){
         if (isAndroid) {
-            boolean click  = click(driver, botonDivision, 10);
-            System.out.println(click);
+            click(driver, botonDivision, 10);
         }
     }
 
     public void clickBotonPorcentaje(){
         if (isAndroid) {
-            boolean click  = click(driver, botonPorcentaje, 10);
-            System.out.println(click);
+            click(driver, botonPorcentaje, 10);
         }
     }
 
     public void clickBotonBorrar(){
         if (isAndroid) {
-            boolean click  = click(driver, botonBorrar, 10);
-            System.out.println(click);
+            click(driver, botonBorrar, 10);
         }
     }
 
     public void clickBotonParentesis(){
         if (isAndroid) {
-            boolean click  = click(driver, botonParentesis, 10);
-            System.out.println(click);
+            click(driver, botonParentesis, 10);
         }
     }
 

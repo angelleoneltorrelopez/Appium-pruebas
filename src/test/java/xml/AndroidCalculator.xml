@@ -5,7 +5,7 @@
         <parameter name = "Platform" value = "Android"/>
         <parameter name = "Device" value = "angelCalculator" />
         <classes>
-            <class name = "test.calculator.sumar"/>
+            <class name = "test.calculator.operacionesBasicas"/>
         </classes>
     </test>
 </suite>
