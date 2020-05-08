@@ -183,4 +183,9 @@ public class MetodosGenerales {
         return ((float) numero) / ((float) potenciaDe10);
     }
 
+    public float redondearConDecimales(float numero, int cifrasDecimales) {
+        float decimalRedondeo = (float) (0.5 * Math.pow(10, -1 * cifrasDecimales));
+        int entero = (int) ((numero + decimalRedondeo) * Math.pow(10, cifrasDecimales));
+        return ((float) entero) / ((float)(Math.pow(10, cifrasDecimales)));
+    }
 }
