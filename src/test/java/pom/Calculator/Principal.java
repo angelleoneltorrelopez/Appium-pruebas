@@ -79,118 +79,80 @@ public class Principal extends MetodosGenerales {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    public void clickBotonCero(){
-        if (isAndroid) {
-            click(driver, botonCero, 10);
-        }
+    public boolean clickBotonCero(){
+           return click(driver, botonCero, 10);
     }
 
-    public void clickBotonUno(){
-        if (isAndroid) {
-            click(driver, botonUno, 10);
-        }
+    public boolean clickBotonUno(){
+        return click(driver, botonUno, 10);
     }
 
-    public void clickBotonDos(){
-        if (isAndroid) {
-            click(driver, botonDos, 10);
-        }
+    public boolean clickBotonDos(){
+        return click(driver, botonDos, 10);
     }
 
-    public void clickBotonTres(){
-        if (isAndroid) {
-            click(driver, botonTres, 10);
-        }
+    public boolean clickBotonTres(){
+        return click(driver, botonTres, 10);
     }
 
-    public void clickBotonCuatro(){
-        if (isAndroid) {
-            click(driver, botonCuatro, 10);
-        }
+    public boolean clickBotonCuatro(){
+        return click(driver, botonCuatro, 10);
     }
 
-    public void clickBotonCinco(){
-        if (isAndroid) {
-            click(driver, botonCinco, 10);
-        }
+    public boolean clickBotonCinco(){
+        return click(driver, botonCinco, 10);
     }
 
-    public void clickBotonSeis(){
-        if (isAndroid) {
-            click(driver, botonSeis, 10);
-        }
+    public boolean clickBotonSeis(){
+        return click(driver, botonSeis, 10);
     }
 
-    public void clickBotonSiete(){
-        if (isAndroid) {
-            click(driver, botonSiete, 10);
-        }
+    public boolean clickBotonSiete(){
+        return click(driver, botonSiete, 10);
     }
 
-    public void clickBotonOcho(){
-        if (isAndroid) {
-            click(driver, botonOcho, 10);
-        }
+    public boolean clickBotonOcho(){
+        return click(driver, botonOcho, 10);
     }
 
-    public void clickBotonNueve(){
-        if (isAndroid) {
-            click(driver, botonNueve, 10);
-        }
+    public boolean clickBotonNueve(){
+        return click(driver, botonNueve, 10);
     }
 
-    public void clickBotonPunto(){
-        if (isAndroid) {
-            click(driver, botonPunto, 10);
-        }
+    public boolean clickBotonPunto(){
+        return click(driver, botonPunto, 10);
     }
 
-    public void clickBotonIgual(){
-        if (isAndroid) {
-            click(driver, botonIgual, 10);
-        }
+    public boolean clickBotonIgual(){
+        return click(driver, botonIgual, 10);
     }
 
-    public void clickBotonMas(){
-        if (isAndroid) {
-            click(driver, botonMas, 10);
-        }
+    public boolean clickBotonMas(){
+        return click(driver, botonMas, 10);
     }
 
-    public void clickBotonMenos(){
-        if (isAndroid) {
-            click(driver, botonMenos, 10);
-        }
+    public boolean clickBotonMenos(){
+        return click(driver, botonMenos, 10);
     }
 
-    public void clickBotonMultiplicacion(){
-        if (isAndroid) {
-            click(driver, botonMultiplicacion, 10);
-        }
+    public boolean clickBotonMultiplicacion(){
+        return click(driver, botonMultiplicacion, 10);
     }
 
-    public void clickBotonDivision(){
-        if (isAndroid) {
-            click(driver, botonDivision, 10);
-        }
+    public boolean clickBotonDivision(){
+        return click(driver, botonDivision, 10);
     }
 
-    public void clickBotonPorcentaje(){
-        if (isAndroid) {
-            click(driver, botonPorcentaje, 10);
-        }
+    public boolean clickBotonPorcentaje(){
+        return click(driver, botonPorcentaje, 10);
     }
 
-    public void clickBotonBorrar(){
-        if (isAndroid) {
-            click(driver, botonBorrar, 10);
-        }
+    public boolean clickBotonBorrar(){
+        return click(driver, botonBorrar, 10);
     }
 
-    public void clickBotonParentesis(){
-        if (isAndroid) {
-            click(driver, botonParentesis, 10);
-        }
+    public boolean clickBotonParentesis(){
+        return click(driver, botonParentesis, 10);
     }
 
     public String obtenerResultado(){

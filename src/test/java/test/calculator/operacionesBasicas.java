@@ -6,6 +6,7 @@ import pom.Calculator.Principal;
 
 import java.util.Arrays;
 import java.util.List;
+import static org.testng.Assert.assertTrue;
 
 /**
  * @author Angel Torre
@@ -21,8 +22,8 @@ public class operacionesBasicas extends TestBase {
         inicializarVariables();
         List<String> operadores = Arrays.asList("-", "+", "*", "/");
 
-        segundaCantidad = getRandomFloat(100,3);
-        primerCantidad = getRandomFloat(100,3);
+        segundaCantidad = 4; //getRandomFloat(100,3);
+        primerCantidad = 8; //getRandomFloat(100,3);
 
         for (String operator: operadores) {
 
@@ -61,26 +62,26 @@ public class operacionesBasicas extends TestBase {
         char[] arrayDigito = cantidad.toCharArray();
         for (char digito : arrayDigito){
             switch (digito){
-                case '0': principal.clickBotonCero(); break;
-                case '1': principal.clickBotonUno(); break;
-                case '2': principal.clickBotonDos(); break;
-                case '3': principal.clickBotonTres(); break;
-                case '4': principal.clickBotonCuatro(); break;
-                case '5': principal.clickBotonCinco(); break;
-                case '6': principal.clickBotonSeis(); break;
-                case '7': principal.clickBotonSiete(); break;
-                case '8': principal.clickBotonOcho(); break;
-                case '9': principal.clickBotonNueve(); break;
-                case '.': principal.clickBotonPunto(); break;
-                case '=': principal.clickBotonIgual(); break;
-                case '+': principal.clickBotonMas(); break;
-                case '-': principal.clickBotonMenos(); break;
-                case '*': principal.clickBotonMultiplicacion(); break;
-                case '/': principal.clickBotonDivision(); break;
-                case '%': principal.clickBotonPorcentaje(); break;
-                case '(': principal.clickBotonParentesis(); break;
-                case ')': principal.clickBotonParentesis(); break;
-                case 'C': principal.clickBotonBorrar(); break;
+                case '0': assertTrue(principal.clickBotonCero(), "Fallo el boton cero"); break;
+                case '1': assertTrue(principal.clickBotonUno(), "Fallo el boton uno"); break;
+                case '2': assertTrue(principal.clickBotonDos(), "Fallo el boton dos"); break;
+                case '3': assertTrue(principal.clickBotonTres(), "Fallo el boton tres"); break;
+                case '4': assertTrue(principal.clickBotonCuatro(), "Fallo el boton cuatro"); break;
+                case '5': assertTrue(principal.clickBotonCinco(), "Fallo el boton cinco"); break;
+                case '6': assertTrue(principal.clickBotonSeis(), "Fallo el boton seis"); break;
+                case '7': assertTrue(principal.clickBotonSiete(), "Fallo el boton siete"); break;
+                case '8': assertTrue(principal.clickBotonOcho(), "Fallo el boton ocho"); break;
+                case '9': assertTrue(principal.clickBotonNueve(), "Fallo el boton nueve"); break;
+                case '.': assertTrue(principal.clickBotonPunto(), "Fallo el boton punto"); break;
+                case '=': assertTrue(principal.clickBotonIgual(), "Fallo el boton igual"); break;
+                case '+': assertTrue(principal.clickBotonMas(), "Fallo el boton mas"); break;
+                case '-': assertTrue(principal.clickBotonMenos(), "Fallo el boton menos"); break;
+                case '*': assertTrue(principal.clickBotonMultiplicacion(), "Fallo el boton multiplicacion"); break;
+                case '/': assertTrue(principal.clickBotonDivision(), "Fallo el boton division"); break;
+                case '%': assertTrue(principal.clickBotonPorcentaje(), "Fallo el boton porcentaje"); break;
+                case '(': assertTrue(principal.clickBotonParentesis(), "Fallo el boton parentesis"); break;
+                case ')': assertTrue(principal.clickBotonParentesis(), "Fallo el boton perentesis"); break;
+                case 'C': assertTrue(principal.clickBotonBorrar(), "Fallo el boton borrar"); break;
             }
         }
     }

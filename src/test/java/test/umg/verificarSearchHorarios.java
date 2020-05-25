@@ -6,6 +6,8 @@ import pom.Umg.Horario;
 import pom.Umg.Menu;
 import procesos.umg.ProcesoLogin;
 
+import static org.testng.Assert.assertTrue;
+
 /**
  * @author Angel Torre
  * History:
@@ -20,9 +22,9 @@ public class verificarSearchHorarios extends TestBase {
         procesoLogin.login();
         menu.clickBotonHorarios();
 
-        horario.ingresarSemestre("1");
-        horario.ingresarano("2013");
-        horario.clickBotonVer();
+        assertTrue(horario.ingresarSemestre("1"), "No ingreso semestre");
+        assertTrue(horario.ingresarano("2013"), "No ingreso año");
+        assertTrue(horario.clickBotonVer(), "Falla boton verr");
         if (horario.existeListView()){
             notificarRegresion(obtenerClase(), obtenerMetodo(), "si se muestra el ListView");
         }
